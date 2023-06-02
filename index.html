@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="data/AgustusNovember_1.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        })
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+            if (bounds_group.getLayers().length) {
+                map.fitBounds(bounds_group.getBounds());
+            }
+        }
+        map.createPane('pane_EsriTopographic_0');
+        map.getPane('pane_EsriTopographic_0').style.zIndex = 400;
+        var layer_EsriTopographic_0 = L.tileLayer('http://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+            pane: 'pane_EsriTopographic_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 22
+        });
+        layer_EsriTopographic_0;
+        map.addLayer(layer_EsriTopographic_0);
+        function pop_AgustusNovember_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_AgustusNovember_1_0(feature) {
+            switch(String(feature.properties['DN'])) {
+                case '2449':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(202,58,45,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3481':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(62,131,227,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '7543':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(42,222,150,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '9048':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(84,195,205,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '9586':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(189,205,47,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '17585':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(39,239,59,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '24620':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(207,60,195,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '46531':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(109,99,221,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '49458':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(218,71,132,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '108517':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(214,165,92,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '134789':
+                    return {
+                pane: 'pane_AgustusNovember_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(158,68,222,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_AgustusNovember_1');
+        map.getPane('pane_AgustusNovember_1').style.zIndex = 401;
+        map.getPane('pane_AgustusNovember_1').style['mix-blend-mode'] = 'normal';
+        var layer_AgustusNovember_1 = new L.geoJson(json_AgustusNovember_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_AgustusNovember_1',
+            layerName: 'layer_AgustusNovember_1',
+            pane: 'pane_AgustusNovember_1',
+            onEachFeature: pop_AgustusNovember_1,
+            style: style_AgustusNovember_1_0,
+        });
+        bounds_group.addLayer(layer_AgustusNovember_1);
+        map.addLayer(layer_AgustusNovember_1);
+        var osmGeocoder = new L.Control.Geocoder({
+            collapsed: true,
+            position: 'topleft',
+            text: 'Search',
+            title: 'Testing'
+        }).addTo(map);
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .className += ' fa fa-search';
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .title += 'Search for a place';
+        setBounds();
+        </script>
+    </body>
+</html>
