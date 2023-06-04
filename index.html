@@ -33,8 +33,8 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="data/DesemberMaret_1.js"></script>
-        <script src="data/OktoberJanuari_2.js"></script>
-        <script src="data/NovemberFebruari_3.js"></script>
+        <script src="data/NovemberFebruari_2.js"></script>
+        <script src="data/OktoberJanuari_3.js"></script>
         <script src="data/SeptemberDesember_4.js"></script>
         <script src="data/AgustusNovember_5.js"></script>
         <script src="data/JuliOktober_6.js"></script>
@@ -73,21 +73,21 @@
         function pop_DesemberMaret_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['gridcode'] !== null ? autolinker.link(feature.properties['gridcode'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
         function style_DesemberMaret_1_0(feature) {
-            switch(String(feature.properties['DN'])) {
+            switch(String(feature.properties['gridcode'])) {
                 case '7204':
                     return {
                 pane: 'pane_DesemberMaret_1',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(175,219,135,1.0)',
+                fillColor: 'rgba(177,222,137,1.0)',
                 interactive: true,
             }
                     break;
@@ -97,7 +97,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(242,149,148,1.0)',
+                fillColor: 'rgba(239,146,145,1.0)',
                 interactive: true,
             }
                     break;
@@ -117,7 +117,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(241,182,106,1.0)',
+                fillColor: 'rgba(248,187,109,1.0)',
                 interactive: true,
             }
                     break;
@@ -127,7 +127,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(30,118,177,1.0)',
+                fillColor: 'rgba(30,116,174,1.0)',
                 interactive: true,
             }
                     break;
@@ -137,7 +137,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(49,155,43,1.0)',
+                fillColor: 'rgba(50,158,43,1.0)',
                 interactive: true,
             }
                     break;
@@ -147,7 +147,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(102,59,149,1.0)',
+                fillColor: 'rgba(102,58,148,1.0)',
                 interactive: true,
             }
                     break;
@@ -157,7 +157,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(252,126,0,1.0)',
+                fillColor: 'rgba(253,126,0,1.0)',
                 interactive: true,
             }
                     break;
@@ -167,7 +167,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(223,26,28,1.0)',
+                fillColor: 'rgba(226,26,28,1.0)',
                 interactive: true,
             }
                     break;
@@ -177,7 +177,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(174,87,39,1.0)',
+                fillColor: 'rgba(170,85,38,1.0)',
                 interactive: true,
             }
                     break;
@@ -196,7 +196,7 @@
             style: style_DesemberMaret_1_0,
         });
         bounds_group.addLayer(layer_DesemberMaret_1);
-        function pop_OktoberJanuari_2(feature, layer) {
+        function pop_NovemberFebruari_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
@@ -205,97 +205,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OktoberJanuari_2_0(feature) {
-            switch(String(feature.properties['DN'])) {
-                case '1583':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(166,206,227,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '3236':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(251,239,3,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '10528':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(251,154,153,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '29362':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(51,159,44,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '40535':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(102,59,149,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '46452':
-                    return {
-                pane: 'pane_OktoberJanuari_2',
-                stroke: false, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(200,176,212,1.0)',
-                interactive: true,
-            }
-                    break;
-            }
-        }
-        map.createPane('pane_OktoberJanuari_2');
-        map.getPane('pane_OktoberJanuari_2').style.zIndex = 402;
-        map.getPane('pane_OktoberJanuari_2').style['mix-blend-mode'] = 'normal';
-        var layer_OktoberJanuari_2 = new L.geoJson(json_OktoberJanuari_2, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_OktoberJanuari_2',
-            layerName: 'layer_OktoberJanuari_2',
-            pane: 'pane_OktoberJanuari_2',
-            onEachFeature: pop_OktoberJanuari_2,
-            style: style_OktoberJanuari_2_0,
-        });
-        bounds_group.addLayer(layer_OktoberJanuari_2);
-        function pop_NovemberFebruari_3(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_NovemberFebruari_3_0(feature) {
+        function style_NovemberFebruari_2_0(feature) {
             switch(String(feature.properties['DN'])) {
                 case '5771':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -305,7 +219,7 @@
                     break;
                 case '11193':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -315,7 +229,7 @@
                     break;
                 case '14084':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -325,7 +239,7 @@
                     break;
                 case '14695':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -335,7 +249,7 @@
                     break;
                 case '28374':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -345,7 +259,7 @@
                     break;
                 case '30366':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -355,7 +269,7 @@
                     break;
                 case '57841':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -365,7 +279,7 @@
                     break;
                 case '154132':
                     return {
-                pane: 'pane_NovemberFebruari_3',
+                pane: 'pane_NovemberFebruari_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -375,19 +289,105 @@
                     break;
             }
         }
-        map.createPane('pane_NovemberFebruari_3');
-        map.getPane('pane_NovemberFebruari_3').style.zIndex = 403;
-        map.getPane('pane_NovemberFebruari_3').style['mix-blend-mode'] = 'normal';
-        var layer_NovemberFebruari_3 = new L.geoJson(json_NovemberFebruari_3, {
+        map.createPane('pane_NovemberFebruari_2');
+        map.getPane('pane_NovemberFebruari_2').style.zIndex = 402;
+        map.getPane('pane_NovemberFebruari_2').style['mix-blend-mode'] = 'normal';
+        var layer_NovemberFebruari_2 = new L.geoJson(json_NovemberFebruari_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_NovemberFebruari_3',
-            layerName: 'layer_NovemberFebruari_3',
-            pane: 'pane_NovemberFebruari_3',
-            onEachFeature: pop_NovemberFebruari_3,
-            style: style_NovemberFebruari_3_0,
+            dataVar: 'json_NovemberFebruari_2',
+            layerName: 'layer_NovemberFebruari_2',
+            pane: 'pane_NovemberFebruari_2',
+            onEachFeature: pop_NovemberFebruari_2,
+            style: style_NovemberFebruari_2_0,
         });
-        bounds_group.addLayer(layer_NovemberFebruari_3);
+        bounds_group.addLayer(layer_NovemberFebruari_2);
+        function pop_OktoberJanuari_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_OktoberJanuari_3_0(feature) {
+            switch(String(feature.properties['DN'])) {
+                case '1583':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(166,206,227,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3236':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(251,239,3,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '10528':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(251,154,153,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '29362':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(51,159,44,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '40535':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(102,59,149,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '46452':
+                    return {
+                pane: 'pane_OktoberJanuari_3',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(200,176,212,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_OktoberJanuari_3');
+        map.getPane('pane_OktoberJanuari_3').style.zIndex = 403;
+        map.getPane('pane_OktoberJanuari_3').style['mix-blend-mode'] = 'normal';
+        var layer_OktoberJanuari_3 = new L.geoJson(json_OktoberJanuari_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_OktoberJanuari_3',
+            layerName: 'layer_OktoberJanuari_3',
+            pane: 'pane_OktoberJanuari_3',
+            onEachFeature: pop_OktoberJanuari_3,
+            style: style_OktoberJanuari_3_0,
+        });
+        bounds_group.addLayer(layer_OktoberJanuari_3);
         function pop_SeptemberDesember_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -875,23 +875,18 @@
         function pop_MeiAgustus_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['gridcode'] !== null ? autolinker.link(feature.properties['gridcode'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
         function style_MeiAgustus_8_0(feature) {
-            switch(String(feature.properties['DN'])) {
+            switch(String(feature.properties['gridcode'])) {
                 case '5602':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(166,206,227,1.0)',
@@ -901,12 +896,7 @@
                 case '7426':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(171,214,132,1.0)',
@@ -916,57 +906,37 @@
                 case '19337':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(255,234,1,1.0)',
+                fillColor: 'rgba(247,247,5,1.0)',
                 interactive: true,
             }
                     break;
                 case '45290':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(104,60,151,1.0)',
+                fillColor: 'rgba(102,59,149,1.0)',
                 interactive: true,
             }
                     break;
                 case '95702':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(242,121,0,1.0)',
+                fillColor: 'rgba(252,126,0,1.0)',
                 interactive: true,
             }
                     break;
                 case '118611':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(202,178,214,1.0)',
@@ -976,15 +946,10 @@
                 case '472013':
                     return {
                 pane: 'pane_MeiAgustus_8',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
+                stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(226,26,28,1.0)',
+                fillColor: 'rgba(223,25,27,1.0)',
                 interactive: true,
             }
                     break;
@@ -1006,21 +971,21 @@
         function pop_AprilJuli_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['gridcode'] !== null ? autolinker.link(feature.properties['gridcode'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
         function style_AprilJuli_9_0(feature) {
-            switch(String(feature.properties['DN'])) {
+            switch(String(feature.properties['gridcode'])) {
                 case '4776':
                     return {
                 pane: 'pane_AprilJuli_9',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(177,222,137,1.0)',
+                fillColor: 'rgba(171,214,132,1.0)',
                 interactive: true,
             }
                     break;
@@ -1040,7 +1005,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(30,117,175,1.0)',
+                fillColor: 'rgba(30,116,174,1.0)',
                 interactive: true,
             }
                     break;
@@ -1070,7 +1035,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(251,255,1,1.0)',
+                fillColor: 'rgba(247,247,5,1.0)',
                 interactive: true,
             }
                     break;
@@ -1080,7 +1045,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(195,172,207,1.0)',
+                fillColor: 'rgba(194,171,205,1.0)',
                 interactive: true,
             }
                     break;
@@ -1090,7 +1055,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(104,60,152,1.0)',
+                fillColor: 'rgba(102,59,149,1.0)',
                 interactive: true,
             }
                     break;
@@ -1100,7 +1065,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(254,126,0,1.0)',
+                fillColor: 'rgba(252,126,0,1.0)',
                 interactive: true,
             }
                     break;
@@ -1110,7 +1075,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(225,26,28,1.0)',
+                fillColor: 'rgba(223,25,27,1.0)',
                 interactive: true,
             }
                     break;
@@ -1258,14 +1223,14 @@
         function pop_FebruariMei_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['gridcode'] !== null ? autolinker.link(feature.properties['gridcode'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
         function style_FebruariMei_11_0(feature) {
-            switch(String(feature.properties['DN'])) {
+            switch(String(feature.properties['gridcode'])) {
                 case '11674':
                     return {
                 pane: 'pane_FebruariMei_11',
@@ -1374,14 +1339,14 @@
         function pop_JanuariApril_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DN'] !== null ? autolinker.link(feature.properties['DN'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['gridcode'] !== null ? autolinker.link(feature.properties['gridcode'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
         function style_JanuariApril_12_0(feature) {
-            switch(String(feature.properties['DN'])) {
+            switch(String(feature.properties['gridcode'])) {
                 case '10181':
                     return {
                 pane: 'pane_JanuariApril_12',
@@ -1398,7 +1363,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(244,185,107,1.0)',
+                fillColor: 'rgba(250,189,110,1.0)',
                 interactive: true,
             }
                     break;
@@ -1408,7 +1373,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(249,153,152,1.0)',
+                fillColor: 'rgba(250,153,152,1.0)',
                 interactive: true,
             }
                     break;
@@ -1438,7 +1403,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(30,117,175,1.0)',
+                fillColor: 'rgba(30,116,174,1.0)',
                 interactive: true,
             }
                     break;
@@ -1448,7 +1413,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(253,126,0,1.0)',
+                fillColor: 'rgba(252,126,0,1.0)',
                 interactive: true,
             }
                     break;
@@ -1478,7 +1443,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(192,169,204,1.0)',
+                fillColor: 'rgba(194,171,205,1.0)',
                 interactive: true,
             }
                     break;
@@ -1488,7 +1453,7 @@
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(227,26,28,1.0)',
+                fillColor: 'rgba(223,25,27,1.0)',
                 interactive: true,
             }
                     break;
@@ -1518,7 +1483,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'JanuariApril<br /><table><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_101810.png" /></td><td>10181</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_170061.png" /></td><td>17006</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_213082.png" /></td><td>21308</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_232643.png" /></td><td>23264</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_286894.png" /></td><td>28689</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_363445.png" /></td><td>36344</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_439956.png" /></td><td>43995</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_505677.png" /></td><td>50567</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_684768.png" /></td><td>68476</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_686859.png" /></td><td>68685</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_11854710.png" /></td><td>118547</td></tr></table>': layer_JanuariApril_12,'FebruariMei<br /><table><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_116740.png" /></td><td>11674</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_229151.png" /></td><td>22915</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_231172.png" /></td><td>23117</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_286643.png" /></td><td>28664</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_349114.png" /></td><td>34911</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_476175.png" /></td><td>47617</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_585316.png" /></td><td>58531</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_589227.png" /></td><td>58922</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_2145678.png" /></td><td>214567</td></tr></table>': layer_FebruariMei_11,'MaretJuni<br /><table><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_16090.png" /></td><td>1609</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_58991.png" /></td><td>5899</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_140482.png" /></td><td>14048</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_219013.png" /></td><td>21901</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_288614.png" /></td><td>28861</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_311615.png" /></td><td>31161</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_454606.png" /></td><td>45460</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_573677.png" /></td><td>57367</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_813788.png" /></td><td>81378</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_2935779.png" /></td><td>293577</td></tr></table>': layer_MaretJuni_10,'AprilJuli<br /><table><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_47760.png" /></td><td>4776</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_62181.png" /></td><td>6218</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_62292.png" /></td><td>6229</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_166553.png" /></td><td>16655</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_198614.png" /></td><td>19861</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_296965.png" /></td><td>29696</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_360406.png" /></td><td>36040</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_491287.png" /></td><td>49128</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_1352358.png" /></td><td>135235</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_3594099.png" /></td><td>359409</td></tr></table>': layer_AprilJuli_9,'MeiAgustus<br /><table><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_56020.png" /></td><td>5602</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_74261.png" /></td><td>7426</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_193372.png" /></td><td>19337</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_452903.png" /></td><td>45290</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_957024.png" /></td><td>95702</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_1186115.png" /></td><td>118611</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_4720136.png" /></td><td>472013</td></tr></table>': layer_MeiAgustus_8,'JuniSeptember<br /><table><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_55640.png" /></td><td>5564</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_79411.png" /></td><td>7941</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_115112.png" /></td><td>11511</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_146353.png" /></td><td>14635</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_187574.png" /></td><td>18757</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_414535.png" /></td><td>41453</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_460326.png" /></td><td>46032</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_571037.png" /></td><td>57103</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_1340568.png" /></td><td>134056</td></tr></table>': layer_JuniSeptember_7,'JuliOktober<br /><table><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_39510.png" /></td><td>3951</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_51971.png" /></td><td>5197</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_77222.png" /></td><td>7722</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_97913.png" /></td><td>9791</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_107814.png" /></td><td>10781</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_121475.png" /></td><td>12147</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_384446.png" /></td><td>38444</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_443217.png" /></td><td>44321</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_444898.png" /></td><td>44489</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_1573349.png" /></td><td>157334</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_16067610.png" /></td><td>160676</td></tr></table>': layer_JuliOktober_6,'AgustusNovember<br /><table><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_24490.png" /></td><td>2449</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_34811.png" /></td><td>3481</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_75432.png" /></td><td>7543</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_90483.png" /></td><td>9048</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_95864.png" /></td><td>9586</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_175855.png" /></td><td>17585</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_246206.png" /></td><td>24620</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_465317.png" /></td><td>46531</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_494588.png" /></td><td>49458</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_1085179.png" /></td><td>108517</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_13478910.png" /></td><td>134789</td></tr></table>': layer_AgustusNovember_5,'SeptemberDesember<br /><table><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_11890.png" /></td><td>1189</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_42621.png" /></td><td>4262</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_73692.png" /></td><td>7369</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_92203.png" /></td><td>9220</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_269554.png" /></td><td>26955</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_319435.png" /></td><td>31943</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_356136.png" /></td><td>35613</td></tr></table>': layer_SeptemberDesember_4,'NovemberFebruari<br /><table><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_57710.png" /></td><td>5771</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_111931.png" /></td><td>11193</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_140842.png" /></td><td>14084</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_146953.png" /></td><td>14695</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_283744.png" /></td><td>28374</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_303665.png" /></td><td>30366</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_578416.png" /></td><td>57841</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_3_1541327.png" /></td><td>154132</td></tr></table>': layer_NovemberFebruari_3,'OktoberJanuari<br /><table><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_15830.png" /></td><td>1583</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_32361.png" /></td><td>3236</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_105282.png" /></td><td>10528</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_293623.png" /></td><td>29362</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_405354.png" /></td><td>40535</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_2_464525.png" /></td><td>46452</td></tr></table>': layer_OktoberJanuari_2,'DesemberMaret<br /><table><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_72040.png" /></td><td>7204</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_131471.png" /></td><td>13147</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_160692.png" /></td><td>16069</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_367663.png" /></td><td>36766</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_436084.png" /></td><td>43608</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_477455.png" /></td><td>47745</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_608236.png" /></td><td>60823</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1391437.png" /></td><td>139143</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1467028.png" /></td><td>146702</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1627329.png" /></td><td>162732</td></tr></table>': layer_DesemberMaret_1,"Esri Topographic": layer_EsriTopographic_0,}).addTo(map);
+        L.control.layers(baseMaps,{'JanuariApril<br /><table><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_101810.png" /></td><td>10181</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_170061.png" /></td><td>17006</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_213082.png" /></td><td>21308</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_232643.png" /></td><td>23264</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_286894.png" /></td><td>28689</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_363445.png" /></td><td>36344</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_439956.png" /></td><td>43995</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_505677.png" /></td><td>50567</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_684768.png" /></td><td>68476</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_686859.png" /></td><td>68685</td></tr><tr><td style="text-align: center;"><img src="legend/JanuariApril_12_11854710.png" /></td><td>118547</td></tr></table>': layer_JanuariApril_12,'FebruariMei<br /><table><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_116740.png" /></td><td>11674</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_229151.png" /></td><td>22915</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_231172.png" /></td><td>23117</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_286643.png" /></td><td>28664</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_349114.png" /></td><td>34911</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_476175.png" /></td><td>47617</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_585316.png" /></td><td>58531</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_589227.png" /></td><td>58922</td></tr><tr><td style="text-align: center;"><img src="legend/FebruariMei_11_2145678.png" /></td><td>214567</td></tr></table>': layer_FebruariMei_11,'MaretJuni<br /><table><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_16090.png" /></td><td>1609</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_58991.png" /></td><td>5899</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_140482.png" /></td><td>14048</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_219013.png" /></td><td>21901</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_288614.png" /></td><td>28861</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_311615.png" /></td><td>31161</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_454606.png" /></td><td>45460</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_573677.png" /></td><td>57367</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_813788.png" /></td><td>81378</td></tr><tr><td style="text-align: center;"><img src="legend/MaretJuni_10_2935779.png" /></td><td>293577</td></tr></table>': layer_MaretJuni_10,'AprilJuli<br /><table><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_47760.png" /></td><td>4776</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_62181.png" /></td><td>6218</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_62292.png" /></td><td>6229</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_166553.png" /></td><td>16655</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_198614.png" /></td><td>19861</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_296965.png" /></td><td>29696</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_360406.png" /></td><td>36040</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_491287.png" /></td><td>49128</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_1352358.png" /></td><td>135235</td></tr><tr><td style="text-align: center;"><img src="legend/AprilJuli_9_3594099.png" /></td><td>359409</td></tr></table>': layer_AprilJuli_9,'MeiAgustus<br /><table><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_56020.png" /></td><td>5602</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_74261.png" /></td><td>7426</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_193372.png" /></td><td>19337</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_452903.png" /></td><td>45290</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_957024.png" /></td><td>95702</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_1186115.png" /></td><td>118611</td></tr><tr><td style="text-align: center;"><img src="legend/MeiAgustus_8_4720136.png" /></td><td>472013</td></tr></table>': layer_MeiAgustus_8,'JuniSeptember<br /><table><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_55640.png" /></td><td>5564</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_79411.png" /></td><td>7941</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_115112.png" /></td><td>11511</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_146353.png" /></td><td>14635</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_187574.png" /></td><td>18757</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_414535.png" /></td><td>41453</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_460326.png" /></td><td>46032</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_571037.png" /></td><td>57103</td></tr><tr><td style="text-align: center;"><img src="legend/JuniSeptember_7_1340568.png" /></td><td>134056</td></tr></table>': layer_JuniSeptember_7,'JuliOktober<br /><table><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_39510.png" /></td><td>3951</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_51971.png" /></td><td>5197</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_77222.png" /></td><td>7722</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_97913.png" /></td><td>9791</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_107814.png" /></td><td>10781</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_121475.png" /></td><td>12147</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_384446.png" /></td><td>38444</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_443217.png" /></td><td>44321</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_444898.png" /></td><td>44489</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_1573349.png" /></td><td>157334</td></tr><tr><td style="text-align: center;"><img src="legend/JuliOktober_6_16067610.png" /></td><td>160676</td></tr></table>': layer_JuliOktober_6,'AgustusNovember<br /><table><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_24490.png" /></td><td>2449</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_34811.png" /></td><td>3481</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_75432.png" /></td><td>7543</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_90483.png" /></td><td>9048</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_95864.png" /></td><td>9586</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_175855.png" /></td><td>17585</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_246206.png" /></td><td>24620</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_465317.png" /></td><td>46531</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_494588.png" /></td><td>49458</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_1085179.png" /></td><td>108517</td></tr><tr><td style="text-align: center;"><img src="legend/AgustusNovember_5_13478910.png" /></td><td>134789</td></tr></table>': layer_AgustusNovember_5,'SeptemberDesember<br /><table><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_11890.png" /></td><td>1189</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_42621.png" /></td><td>4262</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_73692.png" /></td><td>7369</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_92203.png" /></td><td>9220</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_269554.png" /></td><td>26955</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_319435.png" /></td><td>31943</td></tr><tr><td style="text-align: center;"><img src="legend/SeptemberDesember_4_356136.png" /></td><td>35613</td></tr></table>': layer_SeptemberDesember_4,'OktoberJanuari<br /><table><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_15830.png" /></td><td>1583</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_32361.png" /></td><td>3236</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_105282.png" /></td><td>10528</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_293623.png" /></td><td>29362</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_405354.png" /></td><td>40535</td></tr><tr><td style="text-align: center;"><img src="legend/OktoberJanuari_3_464525.png" /></td><td>46452</td></tr></table>': layer_OktoberJanuari_3,'NovemberFebruari<br /><table><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_57710.png" /></td><td>5771</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_111931.png" /></td><td>11193</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_140842.png" /></td><td>14084</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_146953.png" /></td><td>14695</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_283744.png" /></td><td>28374</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_303665.png" /></td><td>30366</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_578416.png" /></td><td>57841</td></tr><tr><td style="text-align: center;"><img src="legend/NovemberFebruari_2_1541327.png" /></td><td>154132</td></tr></table>': layer_NovemberFebruari_2,'DesemberMaret<br /><table><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_72040.png" /></td><td>7204</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_131471.png" /></td><td>13147</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_160692.png" /></td><td>16069</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_367663.png" /></td><td>36766</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_436084.png" /></td><td>43608</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_477455.png" /></td><td>47745</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_608236.png" /></td><td>60823</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1391437.png" /></td><td>139143</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1467028.png" /></td><td>146702</td></tr><tr><td style="text-align: center;"><img src="legend/DesemberMaret_1_1627329.png" /></td><td>162732</td></tr></table>': layer_DesemberMaret_1,"Esri Topographic": layer_EsriTopographic_0,}).addTo(map);
         setBounds();
         </script>
     </body>
